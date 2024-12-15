@@ -3,7 +3,13 @@
 Bem-vindo ao repositório do site oficial da **New Tec Company**!
 
 ## Sobre
-A **New Tec Company** é uma empresa voltada para a venda de dispositivos e materiais eletrônicos, além de oferecer cursos de capacitação em tecnologia, incluindo programação, HTML, CSS e cibersegurança. Nosso objetivo é fornecer soluções tecnológicas de qualidade e promover a educação tecnológica tanto online quanto presencialmente.
+A **New Tec Company** é uma empresa voltada para a venda de dispositivos e materiais eletrônicos, além de oferecer cursos de capacitação em tecnologia, incluindo:
+- ![Programação](https://img.shields.io/badge/Programação-0A66C2?style=flat-square&logo=c%2B%2B&logoColor=white) Programação
+- ![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white) HTML
+- ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white) CSS
+- ![Cibersegurança](https://img.shields.io/badge/Cibersegurança-FF6F00?style=flat-square&logo=security&logoColor=white) Cibersegurança
+
+Nosso objetivo é fornecer soluções tecnológicas de qualidade e promover a educação tecnológica tanto online quanto presencialmente.
 
 ## Funcionalidades do Site
 - **Informativo sobre a empresa**: Detalhes sobre a história, missão, visão e valores da empresa.
@@ -75,4 +81,6 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ---
 **New Tec Company - Conectando você ao futuro!**
+
+
 
