@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - New Tec Company</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+            }
+    
+            .header {
+                background-color: #003366;
+                color: white;
+                padding: 15px;
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+            }
+    
+            .navbar {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                background-color: #003366;
+                color: white;
+                padding: 10px;
+                font-size: 16px;
+            }
+    
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                padding: 5px 10px;
+            }
+    
+            .navbar a:hover {
+                background-color: #0055aa;
+                border-radius: 5px;
+            }
+    
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+    
+            .contact-card {
+                background-color: white;
+                padding: 20px;
+                border-radius: 8px;
+                max-width: 800px;
+                width: 100%;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+    
+            .contact-card img {
+                width: 100%;
+                max-width: 300px;
+                border-radius: 8px;
+            }
+    
+            .form-section {
+                flex: 1;
+            }
+    
+            .form-section h2 {
+                color: #003366;
+                margin-bottom: 15px;
+            }
+    
+            .form-section input, .form-section textarea {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+    
+            .form-section button {
+                margin-top: 15px;
+                padding: 10px;
+                width: 100%;
+                background-color: #003366;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+    
+            .form-section button:hover {
+                background-color: #0055aa;
+            }
+    
+            @media (max-width: 768px) {
+                .contact-card {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+                .contact-card img {
+                    max-width: 100%;
+                }
+            }
+            .footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0056b3;
+    color: #fff;
+    margin-top: 40px;
+}
+        </style>
+    </head>
+    <body>
+    
+    <div class="header">NEW-TEC COMPANY</div>
+    <div class="navbar">
+        <a href="Academia.html">Academia</a>
+        <a href="PaginaInicial.html">Loja</a>
+        <a href="Empresa.html">Empresas</a>
+        <a href="Contactar.html">Contactar</a>
+    </div>
+    
+    <div class="container">
+        <div class="contact-card">
+            <img src="img/ft.empresa.jpg" alt="Imagem de Contato">
+            <div class="form-section">
+                <h2>Contactar</h2>
+                <input type="text" id="name" placeholder="Nome Completo">
+                <input type="text" id="phone" placeholder="Telefone">
+                <input type="email" id="email" placeholder="Email">
+                <textarea id="message" placeholder="Sua mensagem"></textarea>
+                <button onclick="sendToWhatsApp()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function sendToWhatsApp() {
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+    
+            const whatsappNumber = "929586861"; // Insira seu número com o código do país, exemplo: 5581999999999
+            const url = `https://wa.me/${whatsappNumber}?text=` + 
+                        `Nome: ${encodeURIComponent(name)}%0A` + 
+                        `Telefone: ${encodeURIComponent(phone)}%0A` + 
+                        `Email: ${encodeURIComponent(email)}%0A` + 
+                        `Mensagem: ${encodeURIComponent(message)}`;
+    
+            window.open(url, "_blank");
+        }
+    </script>
+
+<footer class="footer">
+    <p>&copy; 2024 New Tec Company. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

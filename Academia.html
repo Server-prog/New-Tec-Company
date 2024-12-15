@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia New_TEC</title>
+    <style>
+        /* Reset e estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #0057a3;
+            padding: 10px 20px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1rem;
+        }
+
+        /* Seção Principal */
+        .main-section {
+            background: url('img/www.newtec_company.co.png') no-repeat center center/cover;
+            color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .main-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .main-section p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .main-section .cta-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        /* Seção de Cursos */
+        .courses-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .courses-section h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .courses-section p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .course-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .course-card h3 {
+            font-size: 1.25rem;
+            padding: 15px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #0057a3;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .main-section h1 {
+                font-size: 2rem;
+            }
+
+            .main-section p {
+                font-size: 1rem;
+            }
+
+            header nav a {
+                font-size: 0.9rem;
+                margin: 0 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            .main-section {
+                padding: 40px 15px;
+            }
+
+            .courses-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="Academia.html">Academia</a>
+            <a href="PaginaInicial.html">Loja</a>
+            <a href="Empresa.html">Empresas</a>
+            <a href="Contactar.html">Contactar</a>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <h1>Tecnology Course</h1>
+        <p>É uma oportunidade emocionante para jovens e crianças explorarem o mundo da tecnologia e da automação. Onde terão a chance de aprender sobre construção de robôs, programação, artes, geração e transformação de energias.</p>
+        <a href="Inscrição.html" class="cta-button">Inscrever-se</a>
+    </section>
+
+    <section class="courses-section">
+        <h2>Nossos Cursos</h2>
+        <p>Cursos disponíveis presencialmente nas academias arotec e on-line em nossa plataforma</p>
+        
+        <div class="courses-grid">
+            <div class="course-card">
+                <img src="img/programação.jpeg" alt="Curso de Robótica">
+                <h3>Programação</h3>
+            </div>
+            <div class="course-card">
+                <img src="img/cyber segurança.jpeg" alt="Programação para Iniciantes">
+                <h3>Cyber Segurança</h3>
+            </div>
+            <div class="course-card">
+                <img src="img/desenvolvimento web.jpeg" alt="Eletrônica Básica">
+                <h3>desenvolvimento</h3>
+            </div>
+            <div class="course-card">
+                <img src="img/Lógica de programação.jpeg" alt="Automação e Controle">
+                <h3>Logica de programação</h3>
+            </div>
+            <div class="course-card">
+                <img src="img/redes de computadores.jpeg" alt="Montagem de PCs">
+                <h3>Redes de computadores</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2024 New_TEC, Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>

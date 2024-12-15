@@ -1,0 +1,390 @@
+/* Estilos padrão para telas grandes */
+body {
+    font-size: 16px;
+}
+
+/* Estilos para dispositivos móveis (largura máxima de 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    /* Ajuste os cards, formulários e outros elementos para caberem na tela pequena */
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*Termina Aqui  !!!
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Seção Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(120deg, #004080, #0099cc);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.9rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero-image img {
+    max-width: 250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.top-bar {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    background-color: #0059b3;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    filter: brightness(0) invert(1);
+}
+
+.contact p {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+}
+
+.icons button img {
+    width: 20px;
+    height: 20px;
+}
+
+.icons button span {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 5px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(41, 156, 209);
+    padding: 10px;
+}
+
+.nav-menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.nav-menu a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+
+/* Produtos */
+.produtos {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    background-color: #f5f5f5;
+    bottom: btn-primary;
+}
+
+.produto {
+    position: relative;
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+}
+
+.produto img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+
+.produto .tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.produto .tag.desconto {
+    background-color: red;
+}
+
+.destaque {
+    background-color: #004080;
+    color: white;
+}
+
+/* Componentes */
+
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    background-color: #2682eb;
+    color: #fff;
+    padding: 10px;
+}
+
+.destaque {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.produto {
+    width: 180px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.imagem {
+    position: relative;
+}
+
+.imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.comprar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+}
+
+.produto:hover .comprar {
+    opacity: 1;
+}
+
+p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #333;
+}
+
+span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer {
+    background-color: #0059b3;
+    color: white;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 1rem;
+}
+
+.footer-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+
+.socials a {
+    margin-right: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.8rem;
+}
+

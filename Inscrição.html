@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="Inscrição.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">NEW-TEC</div>
+        <nav>
+            <a href="Academia.html">Academia</a>
+            <a href="PaginaInicial.html">Loja</a>
+            <a href="Empresa.html">Empresas</a>
+            <a href="Contactar.html">Contactar</a>
+        </nav>
+    </header>
+
+    <!-- Formulário de Inscrição -->
+    <section class="inscricao">
+        <h2>Preencha o formulário de inscrição</h2>
+        <form id="formInscricao" onsubmit="enviarWhatsApp(event)">
+            <div class="form-group">
+                <label for="nomeCompleto">Nome Completo</label>
+                <input type="text" id="nomeCompleto" placeholder="Nome Completo" required>
+            </div>
+            <div class="form-group">
+                <label for="nomeEncarregado">Nome do Encarregado</label>
+                <input type="text" id="nomeEncarregado" placeholder="Nome do Encarregado" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" placeholder="Telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" placeholder="Endereço" required>
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" placeholder="Idade" required>
+            </div>
+            <div class="form-group">
+                <label for="local">Local da Formação</label>
+                <select id="local" required>
+                    <option>Selecione um local</option>
+                    <option value="Local 1">on-line</option>
+                    <option value="Local 2">Presencial</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="hora">Hora da Formação</label>
+                <select id="hora" required>
+                    <option>Selecione uma hora</option>
+                    <option value="Hora">08:00hrs - 12:30hrs</option>
+                    <option value="Hora">13:30hrs - 17:00hrs</option>
+                    <option value="Hora">18:00hrs - 21:00hrs</option>
+                </select>
+            </div>
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+    </section>
+
+    <script>
+        function enviarWhatsApp(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Captura os valores dos campos
+            const nomeCompleto = document.getElementById("nomeCompleto").value;
+            const nomeEncarregado = document.getElementById("nomeEncarregado").value;
+            const telefone = document.getElementById("telefone").value;
+            const email = document.getElementById("email").value;
+            const endereco = document.getElementById("endereco").value;
+            const idade = document.getElementById("idade").value;
+            const local = document.getElementById("local").value;
+            const hora = document.getElementById("hora").value;
+
+            // Número de WhatsApp para onde será enviada a mensagem
+            const telefoneWhatsApp = "929586861"; // Coloque o número no formato internacional, ex: 5581999999999
+
+            // Monta a mensagem para o WhatsApp
+            const mensagem = `Olá! Gostaria de enviar os seguintes dados:\n\n` +
+                `Nome Completo: ${nomeCompleto}\n` +
+                `Nome do Encarregado: ${nomeEncarregado}\n` +
+                `Telefone: ${telefone}\n` +
+                `Email: ${email}\n` +
+                `Endereço: ${endereco}\n` +
+                `Idade: ${idade}\n` +
+                `Local da Formação: ${local}\n` +
+                `Hora da Formação: ${hora}`;
+
+            // Codifica a mensagem para a URL
+            const mensagemCodificada = encodeURIComponent(mensagem);
+
+            // Gera o link do WhatsApp
+            const linkWhatsApp = `https://wa.me/${telefoneWhatsApp}?text=${mensagemCodificada}`;
+
+            // Redireciona para o link do WhatsApp
+            window.open(linkWhatsApp, "_blank");
+        }
+    </script>
+
+</body>
+</html>
+

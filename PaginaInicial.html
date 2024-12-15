@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW TEC</title>
+    <link rel="stylesheet" href="PaginaInicial.css">
+    
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">NEW TEC COMPANY</div>
+        <nav>
+            <ul>
+                <li><a href="Academia.html">Academia</a></li>
+                <li><a href="PaginaInicial.html">Loja</a></li>
+                <li><a href="Empresa.html">Empresas</a></li>
+                <li><a href="Contactar.html">Contactar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Apresentação -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Explore o mundo da tecnologia, experimente, transforme sua criatividade.</h1>
+            <p>A tecnologia move o mundo, vamos conectar sonhos, um byte de cada vez.</p>
+        </div>
+        <div class="hero-image">
+            <img src="img/N.Tec-removebg-preview.png" alt="MacBook">
+        </div>
+    </section>
+
+    <!-- Barra superior com mensagem de entrega -->
+    <div class="top-bar">
+        <p>As encomendas serão entregues em 48 horas 🚚</p>
+    </div>
+
+    <!-- Barra de navegação principal -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="img/N.Tec-removebg-preview.png" alt="Logo" width="100" height="30">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Procurar artigos">
+                <button><img src="img/N.Tec-removebg-preview.png" alt="Pesquisar" width="25" height="25"></button>
+            </div>
+            <div class="contact">
+                <p>📞 +244 929 586 861</p>
+            </div>
+            <div class="icons">
+                <button><img src="img/perfil.jpg" alt="Perfil" width="20" height="20"></button>
+                <button><img src="img/Carrinha-removebg-preview.png" alt="Carrinho" width="40" height="40"><span>0</span></button>
+                <button><img src="img/App.jpg" alt="App" width="40" height="20"></button>
+            </div>
+        </div>        
+    
+        <!-- Menu de navegação -->
+        <nav class="nav-menu">
+           
+            <a href="#">Promoção</a>
+            <a href="#">Pacote De Produtos</a>
+            <select id="Marca" name="Marca" required>
+                <option value="" disabled selected>Marca</option>
+                <option value="HP">HP</option>
+                <option value="DELL">DELL</option>
+                <option value="MacBook">MacBook</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="TOSHIBA">TOSHIBA</option>
+                <option value="LG">LG</option>
+                <option value="Apple">Apple</option>
+            </select>
+
+            <a href="#">Loja HP</a>
+            <a href="#">Loja Mikrotik</a>
+            <a href="#">Lojas</a>
+        </nav>
+    </header>
+
+    <style>
+        /* Estilos para o carrossel */
+        .carousel-container {
+            position: relative;
+            width: 500%;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.3s ease;
+        }
+
+        .carousel-slide img, .carousel-slide video {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Pontos indicativos */
+        .carousel-dots {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .active-dot {
+            background-color: #717171;
+        }
+    </style>
+</head>
+<body>
+
+<div class="carousel-container">
+    <div class="carousel-slide" id="carouselSlide">
+        <!-- Slide com vídeo -->
+        <video autoplay loop muted>
+            <source src="img/MacBook Pro with M1 Pro and M1 Max reveal.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <!-- Slide com imagem -->
+        <img src="img/www.newtec_company.com.png" alt="Publicidade 1">
+        
+        <!-- Adicione mais slides conforme necessário -->
+    </div>
+</div>
+
+<div class="carousel-dots">
+    <span class="dot active-dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <!-- Adicione mais pontos conforme o número de slides -->
+</div>
+
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".carousel-slide img, .carousel-slide video");
+    const dots = document.querySelectorAll(".dot");
+
+    // Função para mostrar o slide atual
+    function showSlides() {
+        slides.forEach((slide, index) => {
+            slide.style.display = "none";
+        });
+        dots.forEach(dot => dot.classList.remove("active-dot"));
+
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add("active-dot");
+        setTimeout(showSlides, 5000); // Troca de slide a cada 5 segundos
+    }
+
+    // Função para selecionar um slide específico
+    function currentSlide(n) {
+        slideIndex = n;
+        showSlides();
+    }
+
+    // Inicia o carrossel
+    showSlides();
+</script>
+    <!-- Produtos -->
+    <section class="produtos">
+        <div class="produto">
+            <div class="tag">Novo</div>
+            <img src="img/desk1.jpg" alt="Manual Arotec">
+            <p>DeskTop</p>
+            <span>159.000 Kz</span>
+            <button class="comprar">comprar</button>
+        </div>
+        <div class="produto">
+            <div class="tag desconto">-20%</div>
+            <img src="img/pc 12.jpg" alt="MacBook">
+            <p>Mac Book</p>
+            <span>370.000 Kz</span>
+            <button class="comprar">comprar</button>
+        </div>
+        <div class="produto destaque">
+            <img src="img/pc 2.jpg" alt="Arobot">
+            <br />
+            <p>PC DELL</p>
+            <span>200.000 Kz</span>
+            <button class="comprar">Comprar</button>
+        </div> 
+        <div class="produto destaque">
+            <img src="img/Mult.jpeg" alt="Multimetro">
+            <p>Multimetro</p>
+            <span>45.000 Kz</span>
+            <button class="comprar">Comprar</button>
+        </div>
+    </section>
+
+    <section class="destaque">
+        <h2>Em Destaque</h2>
+        <div class="produtos">
+            <div class="produto">
+                <div class="imagem">
+                    <img src="img/Repetidor de sinal wi fi.jpeg" alt="Repetidor de sinal wi-fi">
+                    <button class="comprar">Comprar</button>
+                </div>
+                <p>Repetidor de sinal wi-fi</p>
+                <span>12.500,00 Kz</span>
+            </div>
+            <div class="produto">
+                <div class="imagem">
+                    <img src="img/ethernet.jpeg" alt="Ethernet media converter">
+                    <button class="comprar">Comprar</button>
+                </div>
+                <p>Ethernet media converter Netlink 10/100/1000 single mode</p>
+                <span>120.000,00 Kz</span>
+            </div>
+            <div class="produto">
+                <div class="imagem">
+                    <img src="img/router.jpeg" alt="Router Cisco">
+                    <button class="comprar">Comprar</button>
+                </div>
+                <p>Router Cisco 2911 (Reciclado)</p>
+                <span>380.000,00 Kz</span>
+            </div>
+            <div class="produto">
+                <div class="imagem">
+                    <img src="img/ram.jpeg" alt="Memória RAM">
+                    <button class="comprar">Comprar</button>
+                </div>
+                <p>Memória ram hp ddr3 32gb-4rx4-pc3l-10600L</p>
+                <span>90.000,00 Kz</span>
+            </div>
+            <div class="produto">
+                <div class="imagem">
+                    <img src="img/switch.jpeg" alt="Switch Cisco">
+                    <button class="comprar">Comprar</button>
+                </div>
+                <p>Switch Cisco Catalyst 3850 48 Portas POE+ Com Módulo NM-4-1G</p>
+                <span>690.000,00 Kz</span>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        
+        /* Estilos da grade de produtos */
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .product-card {
+            flex: 1 1 calc(33.333% - 20px); /* 3 colunas com espaçamento */
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product-slide {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+
+        .product-slide img {
+            max-width: 100%;
+            max-height: 100%;
+            position: absolute;
+            transition: opacity 1s ease-in-out;
+            opacity: 0;
+        }
+
+        .product-slide img.active {
+            opacity: 1;
+        }
+
+        .product-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .product-card {
+                flex: 1 1 calc(50% - 20px); /* 2 colunas no tablet */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-card {
+                flex: 1 1 100%; /* 1 coluna no celular */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="product-grid">
+    <!-- Cartão 1 com Slide -->
+    <div class="product-card">
+        <div class="product-slide" id="slide1">
+            <img src="img/iphone11.jpeg" class="active" alt="MikroTik Antena 1">
+            <img src="img/iphone 16.jpeg" alt="MikroTik Antena 2">
+            <img src="img/aphone14.jpeg" alt="MikroTik Antena 3">
+        </div>
+        <h3>Iphones</h3>
+        <p>Marque a diferença no seu meio</p>
+    </div>
+
+    <!-- Cartão 2 com Slide -->
+    <div class="product-card">
+        <div class="product-slide" id="slide2">
+            <img src="img/Macbokk.jpeg" class="active" alt="MacBook 1">
+            <img src="img/pc 12.jpg" alt="MacBook 2">
+            <img src="img/pc 2.jpg" alt="MacBook 3">
+        </div>
+        <h3>MacBooks</h3>
+        <p>Portáteis Apple MacBook</p>
+    </div>
+
+    <!-- Cartão 3 com Slide -->
+    <div class="product-card">
+        <div class="product-slide" id="slide3">
+            <img src="img/projector.jpeg" class="active" alt="HP Supplies 1">
+            <img src="img/projector1.jpeg" alt="HP Supplies 2">
+            <img src="img/projector2.jpeg" alt="HP Supplies 3">
+        </div>
+        <h3>Projectores HP</h3>
+        <p>Excepcional, assim como você</p>
+    </div>
+
+    
+    <div class="product-card" >
+        <img src="img/Fonte de alimentação.jpeg" id="HP Laptop">
+        <h3>Fonte De Alimentação</h3>
+        <p>Bancada 30v Dnb-030</p>
+    </div>
+
+    <!-- Cartão 5 -->
+    <div class="product-card">
+        <img src="img/Camera.jpeg" alt="Colunas e Barras de Som">
+        <h3>Camera Profissional</h3>
+        <p>Filmadora Canon XA45</p>
+    </div>
+</div>
+
+<script>
+    // Função para alternar as imagens automaticamente
+    function startSlideShow(slideId) {
+        const slides = document.querySelectorAll(`#${slideId} img`);
+        let currentIndex = 0;
+
+        setInterval(() => {
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add('active');
+        }, 3000); // Alterar imagem a cada 3 segundos
+    }
+
+    // Iniciar slides para os 3 primeiros cartões
+    startSlideShow('slide1');
+    startSlideShow('slide2');
+    startSlideShow('slide3');
+</script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Sobre Nós</h2>
+                <p>
+                    Somos uma empresa focada em vendas de equipamentos eletrônicos e cursos de tecnologia. Conecte-se ao futuro conosco.
+                </p>
+    
+                <div class="socials">
+                    <p>
+                    <a href="https://www.facebook.com/share/p/1Do6wM9mpq/"><img src="img/face.jpg" alt="Facebook" width="15" height="15">NEW TEC COMPANY OFICIAL</a>
+                    </p>
+                    <p>
+                    <a href="https://www.instagram.com/newteccompany_oficial7169?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="img/insta.jpg" alt="Instagram" width="15" height="15">newteccompany_oficial</a>
+                    </p>
+                    <p>
+                    <a href="#"><img src="img/twiter.jpg" alt="Twitter" width="15" height="15">NewTecCompany_Oficial</a>
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="footer-section links">
+                <h2>Links Úteis</h2>
+                <ul>
+                    <li><a href="Academia.html">Academia</a></li>
+                    <li><a href="PaginaInicial.html">Loja</a></li>
+                    <li><a href="Empresa.html">Empresas</a></li>
+                    <li><a href="Contactar.html">Contactar</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section contact">
+                <h2>Contacto</h2>
+                <p>Email: newteccompany@gmail.com</p>
+                <p>Telefone: +244 929 586 861</p>
+                <p>Endereço: Rua Exemplo, 123, Luanda</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NEW TEC COMPANY | Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
