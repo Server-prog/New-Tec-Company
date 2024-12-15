@@ -75,8 +75,8 @@ Contribuições são bem-vindas! Siga estas etapas para contribuir:
 
 ## Contato
 Se você tiver dúvidas ou sugestões, entre em contato conosco:
-- **WhatsApp**: ![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white) [+244 900 000 000](https://wa.me/244900000000)
-- **Email**: ![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white) contato@newteccompany.com
+- **WhatsApp**: ![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white) [+244 929 586 861](https://wa.me/244900000000)
+- **Email**: ![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white) tjoao7279@gmail.com
 
 ## Licença
 Este projeto está licenciado sob a [MIT License](LICENSE).
